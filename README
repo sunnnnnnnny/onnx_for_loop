@@ -1,0 +1,4 @@
+解决fastspeech2模型中，根据预测duration对encoder_output扩增的问题
+注意点：
+1、似乎pytorch需要安装nightly的版本
+2、构建onnx时最好采用输入长度为1，推理时可接受任意输入长度，还有一个问题 推理时输入长度必须大于等于构建onnx时的输入长度
